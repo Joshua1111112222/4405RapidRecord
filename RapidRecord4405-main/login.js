@@ -69,7 +69,7 @@ function determine_user(fullname) {
                     self.location = "index.html";  //or whichever file comes next
                 }
             } else {
-                alert("Sorry " + fullname + ", you are not currently on the 4405 robotics team. Please try again once you have registered. to register, contact Joshua The or Ross Taylor.")
+                alert("Sorry " + fullname + ", you are not currently on the 4405 robotics team. Please try again once you have registered. To register, please contact Joshua, Ross, or a mentor.")
                 //alert("NUH-UH, YOU AIN'T ALLOW IN THESE PARTS, COWBOY")
             }
         })
