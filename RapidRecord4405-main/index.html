@@ -3,7 +3,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="RapidRecord">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon" href="images\logo_old.png">
+        <link rel="apple-touch-icon" href="images/logo_old.png">
         
         <script src="getTotalHours.js" defer></script>
         <link rel="stylesheet" type="text/css" href="index.css?num=6">
@@ -41,14 +41,12 @@
         </div>
         <div id="main">
             <h3 id="welcome" onclick="self.location='submitted.html'">ACCOUNT OPTIONS</h3>
-            <h1 id="name">Welcome back, Unknown</h1> <!-- Modified to include "Welcome back" -->
+            <h1 id="name"></h1> <!-- JavaScript will now add "Welcome back, [name]" -->
             <div id="log-hours-container">
                 <p id="log-text">Log Hours: </p>
                 <div id="hours">0 hours</div>
             </div>
             <div id="buttons">
-                <!-- Right over here, the toggleHour function takes in the hours (1 - 5) and -->
-                <!-- whatever button element (noted as 'this') called the function.          -->
                 <button class="hour-select" onclick="toggleHour(1, this)">1 hour</button>
                 <button class="hour-select" onclick="toggleHour(2, this)">2 hours</button>
                 <button class="hour-select" onclick="toggleHour(3, this)">3 hours</button>
@@ -57,7 +55,6 @@
                 <input class="hour-select" type="number" id="customhours" placeholder="[ Custom ]" onchange="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');toggleHour(Number(this.value), this)" /><br><br>
             </div>
         </div>
-        
 
         <div id="done" onclick="clickDone()">Submit ></div>
     </body>
