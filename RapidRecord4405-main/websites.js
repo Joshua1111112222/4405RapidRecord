@@ -31,7 +31,7 @@ function sixthpage() {
     self.location = "https://joshua1111112222.github.io/Website/"
 }
 function seventhpage() {
-    self.location = ""
+    self.location = " https://joshua1111112222.github.io/Perceptra/"
 }
 function clickBack() {
     self.location = "about.html"
